@@ -26,8 +26,8 @@ def read_and_textify(files):
           sources_list.append(file.name + "_page_"+str(i))
     return [text_list,sources_list]
 
-st.set_page_config(layout="centered", page_title="GoldDigger")
-st.header("GoldDigger")
+st.set_page_config(layout="centered", page_title="Compliance ChatBot - TEST")
+st.header("ComplianceChatBot")
 st.write("---")
   
 #file uploader

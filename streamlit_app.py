@@ -1,10 +1,12 @@
 import streamlit as st
 import hmac
 import langchain
+from langchain_community.chat_models import ChatOpenAI
+from langchain.embeddings import OpenAIEmbeddings
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain.embeddings.openai import OpenAIEmbeddings
-from langchain.vectorstores import Chroma
-from langchain import OpenAI, VectorDBQA
+from langchain_community.vectorstores import Chroma
+from langchain_community.llms.OpenAI import OpenAI
+from langchain.chains.VectorDBQA import VectorDBQA
 from langchain.chains import RetrievalQAWithSourcesChain
 import PyPDF2
 

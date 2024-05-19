@@ -85,7 +85,7 @@ elif uploaded_files:
   retriever.search_kwargs = {'k':2}
 
   #initiate model
-  llm = OpenAI(model_name=model_name, openai_api_key = st.secrets["openai_api_key"], streaming=True)
+  llm = ChatOpenAI(model_name=model_name, openai_api_key = st.secrets["openai_api_key"], streaming=True)
   model = RetrievalQAWithSourcesChain.from_chain_type(llm=llm, chain_type="stuff", retriever=retriever)
   
   st.header("Ask your data")

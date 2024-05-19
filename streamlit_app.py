@@ -6,7 +6,7 @@ from langchain.embeddings import OpenAIEmbeddings
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import Chroma
 from langchain_community.llms import OpenAI
-from langchain.chains.VectorDBQA import VectorDBQA
+from langchain.chains import VectorDBQA
 from langchain.chains import RetrievalQAWithSourcesChain
 import PyPDF2
 
